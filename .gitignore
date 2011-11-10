@@ -1,3 +1,15 @@
+config/database.yml
+**/*.db
+*~
+.DS_Store
+.project
+.idea
+._*
+app/stylesheets/.sass-cache
+config/database.yml
+db/*.sql*
+db/schema.rb
+log/*.log
 .bundle
 db/*.sqlite3
 log/*.log
