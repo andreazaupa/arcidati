@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: MyString
+  name: MyString
+  surname: 
+  birth: 2011-12-09
+  year: 1
+  comitee: MyString
+  club: MyString
+  customer_id: 1
+  email: MyString
+  adress: MyString
+  city: MyString
+  province: MyString
+  country: MyString
+  privacy: false
+  cap: MyString
+
+two:
+  code: MyString
+  name: MyString
+  surname: 
+  birth: 2011-12-09
+  year: 1
+  comitee: MyString
+  club: MyString
+  customer_id: 1
+  email: MyString
+  adress: MyString
+  city: MyString
+  province: MyString
+  country: MyString
+  privacy: false
+  cap: MyString
