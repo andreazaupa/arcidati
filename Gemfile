@@ -8,10 +8,9 @@ gem 'rails', '3.1.3'
 gem 'sqlite3'
 gem "mysql2"
 
-gem 'fastercsv' # Only required on Ruby 1.8 and below
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'activeadmin'
 
-
+gem 'meta_search',    '>= 1.1.0.pre'
 
 # Gems used only for assets and not required
 # in production environments by default.

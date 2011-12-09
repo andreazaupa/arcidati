@@ -48,7 +48,11 @@ Arcidati::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
+  
+  config.assets.precompile += %w[active_admin.css active_admin.js]
   # Enable threaded mode
+
+
   # config.threadsafe!
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
