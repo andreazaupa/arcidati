@@ -4,16 +4,22 @@ ActiveAdmin::Dashboards.build do
   # rendered on the dashboard in the context of the view. So just
   # return the content which you would like to display.
   
-  # == Simple Dashboard Section
-  # Here is an example of a simple dashboard section
-  #
-  #   section "Recent Posts" do
-  #     ul do
-  #       Post.recent(5).collect do |post|
-  #         li link_to(post.title, admin_post_path(post))
-  #       end
-  #     end
-  #   end
+      section "Numero carte serata" do 
+       ul do 
+
+       li Card.order("created_at ASC").where("created_at >= ?",Time.now-1.day).count
+     end
+      end
+      
+    section "Recent CARDS" do
+      ul do
+        Card.order("created_at ASC").where("created_at >= ?",Time.now-1.day).collect do |post|
+          li link_to(post.human_name, admin_card_path(post))
+        end
+      end
+  
+
+    end
   
   # == Render Partial Section
   # The block is rendered within the context of the view, so you can
