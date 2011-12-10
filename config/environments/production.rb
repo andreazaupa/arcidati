@@ -29,11 +29,12 @@ Arcidati::Application.configure do
 
 
   config.action_mailer.default_url_options = { :host => "arcidati.info"}
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   :address => 'localhost',
-  #   :port  => '25'
-  # }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => 'localhost',
+    :domain => "arcidati.info",
+    :port  => '25'
+  }
 
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
