@@ -63,6 +63,9 @@ GEM
       i18n (~> 0.4)
     has_scope (0.5.1)
     hike (1.2.1)
+    hoptoad_notifier (2.4.11)
+      activesupport
+      builder
     i18n (0.6.0)
     inherited_resources (1.2.2)
       has_scope (~> 0.5.0)
@@ -148,6 +151,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.1.1)
+  hoptoad_notifier
   jquery-rails
   meta_search (>= 1.1.0.pre)
   mysql2

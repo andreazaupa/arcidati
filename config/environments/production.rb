@@ -30,11 +30,20 @@ Arcidati::Application.configure do
 
   config.action_mailer.default_url_options = { :host => "arcidati.info"}
   config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   :address => 'localhost',
+  #   :domain => "arcidati.info",
+  #   :port  => '25'
+  # }
   config.action_mailer.smtp_settings = {
-    :address => 'localhost',
-    :domain => "arcidati.info",
-    :port  => '25'
-  }
+  :user_name => "azaupa",
+  :password => "sendgridpassword",
+  :domain => "arcidati.info",
+  :address => "smtp.sendgrid.net",
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
 
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.

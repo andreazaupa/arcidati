@@ -7,7 +7,7 @@ gem 'rails', '3.1.3'
  gem 'sass-rails',   '~> 3.1.5'
 gem 'sqlite3'
 gem "mysql2"
-
+gem 'hoptoad_notifier'
 gem 'activeadmin'
 
 gem 'meta_search',    '>= 1.1.0.pre'
