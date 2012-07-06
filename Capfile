@@ -1,4 +1,3 @@
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 set :rvm_ruby_string, '1.9.2-p318'
 require 'rvm/capistrano'
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
