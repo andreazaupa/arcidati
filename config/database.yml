@@ -27,7 +27,7 @@ production:
   database: arcidati
   host: localhost
   username: root
-  password: 
+  password: coniglio!
 
 
 # Warning: The database defined as "test" will be erased and

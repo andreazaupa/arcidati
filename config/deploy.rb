@@ -13,6 +13,10 @@ set :deploy_via, :remote_cache
 set :scm_verbose, true
 set :user, "deploy"
 
+after "deploy:setup" do
+  run "mkdir -p #{shared_path}/config ;echo \"#{File.read(File.join(".","config","database.yml"))}\" > #{shared_path}/config/database.yml"
+end
+
 after "deploy:finalize_update" do
    run "mkdir -p #{shared_path}/uploads; ln -s #{shared_path}/uploads #{latest_release}/public/uploads"
    run "rm  -f #{latest_release}/config/database.yml; ln -s #{shared_path}/config/database.yml #{latest_release}/config/database.yml "
