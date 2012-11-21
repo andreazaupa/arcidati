@@ -4,9 +4,9 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
- gem 'sass-rails',   '~> 3.1.5'
-gem 'sqlite3'
-gem "mysql2"
+gem 'sass-rails',   '~> 3.1.5'
+gem 'pg'
+# gem "mysql2"
 gem 'hoptoad_notifier'
 gem 'activeadmin'
 
