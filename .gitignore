@@ -10,3 +10,5 @@ public/system/
 *.komodoproject
 .komodotools
 .komodotools/
+arcidati.dump
+csv.csv
