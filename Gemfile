@@ -7,6 +7,8 @@ gem 'rails', '3.1.3'
 gem 'sass-rails',   '~> 3.1.5'
 gem 'pg'
 gem "sqlite3",  :group=>:development
+gem "powder",  :group=>:development
+
 # gem "mysql2"
 gem 'hoptoad_notifier'
 gem 'activeadmin'

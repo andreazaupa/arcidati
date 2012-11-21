@@ -11,7 +11,8 @@ ActiveAdmin.register Card do
         f.input :club
       end
       f.inputs "Dettagli" do
-      	f.input :birth, :start_year => 1900, :end_year => Time.now.year
+      	# f.input :birth, :start_year => 1900, :end_year => Time.now.year
+        f.input :birth, :as=>:string, :input_html => { :value => I18n.l(f.object.birth || Time.now.to_date) } 
       	f.input :adress
       	f.input :city
       	f.input :cap
