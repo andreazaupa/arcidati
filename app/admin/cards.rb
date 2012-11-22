@@ -3,7 +3,7 @@ ActiveAdmin.register Card do
  form do |f|
       f.inputs "Carta" do
         f.input :code
-        f.input :year
+        f.input :year, :as=>:string, :input_html => { :value => (f.object.new_record? ? f.object.cur_year : f.object.year ) }  
         f.input :name
         f.input :surname
         f.input :email
@@ -12,7 +12,8 @@ ActiveAdmin.register Card do
       end
       f.inputs "Dettagli" do
       	# f.input :birth, :start_year => 1900, :end_year => Time.now.year
-        f.input :birth, :as=>:string, :input_html => { :value => I18n.l(f.object.birth || Time.now.to_date) } 
+        # f.input :id, :as=>:string, :input_html => { :value => f.object.birth  } 
+        f.input :birth, :as=>:string, :input_html => { :value => I18n.l( f.object.try("date_helper") || Time.now.to_date) } 
       	f.input :adress
       	f.input :city
       	f.input :cap

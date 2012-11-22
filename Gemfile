@@ -8,10 +8,10 @@ gem 'sass-rails',   '~> 3.1.5'
 gem 'pg'
 gem "sqlite3",  :group=>:development
 gem "powder",  :group=>:development
-
+gem 'newrelic_rpm'
 # gem "mysql2"
 gem 'hoptoad_notifier'
-gem 'activeadmin'
+gem 'activeadmin', "0.3.4"
 
 gem 'meta_search',    '>= 1.1.0.pre'
 
